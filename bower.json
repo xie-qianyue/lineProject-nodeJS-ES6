@@ -1,0 +1,26 @@
+{
+  "name": "Line",
+  "version": "0.0.1",
+  "authors": [
+    "xie qianyue"
+  ],
+  "description": "An app to follow the daily activities",
+  "main": "index.js",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "node",
+    "express",
+    "angular"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.4.4",
+    "bootstrap": "~3.3.5",
+    "angular-route": "~1.4.4",
+    "moment": "~2.10.6",
+    "angular-cookies": "~1.4.5",
+    "angular-resource": "~1.4.5"
+  }
+}

@@ -1,0 +1,29 @@
+<div id="lineapp">
+	<header>
+		<h3 ng-show="!currentUser">Welcome. Please <a href="/login">log in</a>.</h2>
+        <h3 ng-show="currentUser">Hello {{currentUser}}</h2>
+	</header>
+	<section>
+		<div>
+			<label>today is {{lineCtrl.today}}</label>			
+		</div>
+		<div>
+			<label>Create Activity:</label>
+			<input ng-model="lineCtrl.activityName">
+			<input ng-model="lineCtrl.objectName">
+			<button type="button" class="btn btn-default" ng-click="lineCtrl.addActivity()">add activity</button>
+		</div>	
+	</section>
+	<section>
+        <ul>
+            <li ng-repeat="activity in lineCtrl.activities">
+                <div>
+                    <label>{{activity.name}}</label>
+                    <label>{{activity.object}}</label>
+                    <input type="checkbox">
+                </div>
+            </li>
+        </ul>
+	</section>
+	<footer></footer>
+</div>

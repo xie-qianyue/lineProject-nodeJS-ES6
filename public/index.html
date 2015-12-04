@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An app to follow the daily activities">
+    <meta name="author" content="XIE Qianyue">
+    <title>Line</title>
+    <link href="/css/externe/bootstrap.css " rel="stylesheet" />
+    <link href="/css/main.css " rel="stylesheet" />
+    <base href="/">
+</head>
+
+<body ng-app="lineApp">
+    <div class="container">
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/">Line</a>
+                    </li>
+                    <li>
+                        <a href="/about">About</a>
+                    </li>
+                    <li>
+                        <a href="#" ng-click="logout()" ng-show="currentUser">Logout</a>
+                    <li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="view-container">
+            <div ng-view class="view-frame"></div>
+        </div>
+    </div>
+    <script src="/scripts/externe/angular.js"></script>
+    <script src="/scripts/externe/angular-route.js"></script>
+    <script src="/scripts/externe/angular-cookies.js"></script>
+    <script src="/scripts/externe/angular-resource.js"></script>
+    <script src="/scripts/externe/moment.js"></script>
+    <script src="/scripts/app-angular.js"></script>
+    <script src="/scripts/services/lineService.js"></script>
+    <script src="/scripts/services/authService.js"></script>
+    <script src="/scripts/services/userService.js"></script>
+    <script src="/scripts/controllers/lineController.js"></script>
+    <script src="/scripts/controllers/signupController.js"></script>
+    <script src="/scripts/controllers/loginController.js"></script>
+</body>
+
+</html>
