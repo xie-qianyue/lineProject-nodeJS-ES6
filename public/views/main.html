@@ -7,12 +7,6 @@
 		<div>
 			<label>today is {{lineCtrl.today}}</label>			
 		</div>
-		<div>
-			<label>Create Activity:</label>
-			<input ng-model="lineCtrl.activityName">
-			<input ng-model="lineCtrl.objectName">
-			<button type="button" class="btn btn-default" ng-click="lineCtrl.addActivity()">add activity</button>
-		</div>	
 	</section>
 	<section>
         <ul>
@@ -25,5 +19,12 @@
             </li>
         </ul>
 	</section>
-	<footer></footer>
+	<footer class="footer"	>
+		<div class="container">
+			<label>Create Activity:</label>
+			<input ng-model="lineCtrl.activityName">
+			<input ng-model="lineCtrl.objectName">
+			<button type="button" class="btn btn-default" ng-click="lineCtrl.addActivity()">add activity</button>
+		</div>
+	</footer>
 </div>
